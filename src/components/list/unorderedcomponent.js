@@ -1,10 +1,10 @@
 import Orderedcomponent from "./orderedcomponent"
 
-const Unorderedlist = () =>{
+const UnordereComponent= () =>{
    return(
     <ul>
         <Orderedcomponent/>
     </ul>
    )
 }
-export default Unorderedlist
+export default UnordereComponent
