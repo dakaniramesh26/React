@@ -1,10 +1,17 @@
 const Orderedcomponent =() =>{
     return(
-        <ol>
-            <li>ramesh</li>
-            <li>raju</li>
-            <li>sathish</li>
+        <div>
+        <h1>Orderedlist Creation</h1>
+        <ol style={
+            {
+                color:"red"
+            }
+        }>
+            <li>Ramesh</li>
+            <li>Riyan</li>
+            <li>Raki</li>
         </ol>
+        </div>
     )
 }
 

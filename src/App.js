@@ -9,12 +9,12 @@ import TableComponent from './components/table/tablecomponent';
 function hello(){
   return(
     <div>
-      {/* <Buttoncomponent/>
+      {/* <Buttoncomponent/> */}
       <Orderedcomponent/>
       <UnordereComponent/>
       <TableComponent/>
-      <FormComponent/> */}
-      <ObjectComponent/>
+      <FormComponent/> 
+      {/* <ObjectComponent/> */}
 
       {/* <h1>Hiiii Guys Wolcome to React</h1>
       <h3>creating buttons</h3>
