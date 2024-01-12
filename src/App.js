@@ -1,6 +1,8 @@
 
 import './App.css'
 import Buttoncomponent from './components/button/buttoncomponent';
+import ClassBasedButtonComponent from './components/classbased/classbasedbuttoncomponent';
+import ClassBasedImageComponent from './components/classbased/classbasedimagecomponent';
 import FormComponent from './components/form/formcomponent';
 import Orderedcomponent from './components/list/orderedcomponent';
 import UnordereComponent from './components/list/unorderedcomponent';
@@ -10,10 +12,12 @@ function hello(){
   return(
     <div>
       {/* <Buttoncomponent/> */}
-      <Orderedcomponent/>
+      {/* <Orderedcomponent/>
       <UnordereComponent/>
       <TableComponent/>
-      <FormComponent/> 
+      <FormComponent/>  */}
+      <ClassBasedButtonComponent/>
+      <ClassBasedImageComponent/>
       {/* <ObjectComponent/> */}
 
       {/* <h1>Hiiii Guys Wolcome to React</h1>
