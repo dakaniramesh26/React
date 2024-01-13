@@ -1,23 +1,36 @@
 
 import './App.css'
+import FirstComponent from './components/bootstrap/firstcomponent';
 import Buttoncomponent from './components/button/buttoncomponent';
 import ClassBasedButtonComponent from './components/classbased/classbasedbuttoncomponent';
+import ClassBasedColorComponent from './components/classbased/classbasedcolorcomponent';
 import ClassBasedImageComponent from './components/classbased/classbasedimagecomponent';
 import FormComponent from './components/form/formcomponent';
 import Orderedcomponent from './components/list/orderedcomponent';
 import UnordereComponent from './components/list/unorderedcomponent';
 import { ObjectComponent } from './components/object/objectcomponent';
+import ProfileComponent from './components/bootstrap/profilecomponent';
 import TableComponent from './components/table/tablecomponent';
+import MapMethod from './components/bootstrap/mapmethod';
 function hello(){
   return(
     <div>
+{/* <MapMethod/> */}
+    <FirstComponent/>
+    {/* <ProfileComponent/> */}
+
+
+
+
+
       {/* <Buttoncomponent/> */}
       {/* <Orderedcomponent/>
       <UnordereComponent/>
       <TableComponent/>
       <FormComponent/>  */}
-      <ClassBasedButtonComponent/>
+      {/* <ClassBasedButtonComponent/>
       <ClassBasedImageComponent/>
+      <ClassBasedColorComponent/> */}
       {/* <ObjectComponent/> */}
 
       {/* <h1>Hiiii Guys Wolcome to React</h1>
