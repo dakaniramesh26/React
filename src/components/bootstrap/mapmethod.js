@@ -4,72 +4,25 @@ const MapMethod=()=>{
 const summary=[{
     name:"Ram",
     disignation:"Software dev",
-    salary:"55k"
+    salary:"55k",
+    id:"101"
 },
 {
 name:"Riyan",
 disignation:"ui dev",
-salary:"25k"
+salary:"25k",
+id:"102"
 },
 {
 name:"Ram",
 disignation:"Software dev",
-salary:"55k"
-},
-{
-name:"Riyan",
-disignation:"ui dev",
-salary:"25k"
-},
-{
-name:"Ram",
-disignation:"Software dev",
-salary:"55k"
-},
-{
-name:"Riyan",
-disignation:"ui dev",
-salary:"25k"
-},
-{
-name:"Ram",
-disignation:"Software dev",
-salary:"55k"
-},
-{
-name:"Riyan",
-disignation:"ui dev",
-salary:"25k"
-},
-{
-name:"Ram",
-disignation:"Software dev",
-salary:"55k"
-},
-{
-name:"Riyan",
-disignation:"ui dev",
-salary:"25k"
-},
-{
-name:"Ram",
-disignation:"Software dev",
-salary:"55k"
-},
-{
-name:"Riyan",
-disignation:"ui dev",
-salary:"25k"
-},
-{
-name:"Raki",
-disignation:"product dev",
-salary:"35k"
+salary:"55k",
+id:"103"
 }]
 
     return(
         <>
-        {summary.map((summary)=><ProfileComponent details={summary}/>)}
+        {summary.map((summary)=><ProfileComponent details={summary} key={summary.id}/>)}
         </>
 
     )

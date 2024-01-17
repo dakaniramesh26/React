@@ -12,12 +12,15 @@ import { ObjectComponent } from './components/object/objectcomponent';
 import ProfileComponent from './components/bootstrap/profilecomponent';
 import TableComponent from './components/table/tablecomponent';
 import MapMethod from './components/bootstrap/mapmethod';
+import Parent from './components/counter/parent';
 function hello(){
   return(
     <div>
 {/* <MapMethod/> */}
-    <FirstComponent/>
+
     {/* <ProfileComponent/> */}
+
+    <Parent/>
 
 
 
