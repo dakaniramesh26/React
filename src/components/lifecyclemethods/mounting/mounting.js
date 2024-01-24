@@ -39,6 +39,7 @@ class Mounting extends Component {
               <>
                 <h2>{eachPost.title}</h2>
                 <h2>{eachPost.id}</h2>
+             
               </>
             ))}
           </>
