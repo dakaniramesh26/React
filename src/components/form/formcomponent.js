@@ -1,20 +1,21 @@
 function FormComponent() {
   return (
     <div>
-      <h1>Form Creation</h1>
+      <h3 style={{textAlign:"center"}}>Datails</h3>
       <form style={
         {
-          color:"sienna"
+          color:"sienna",
+          textAlign:"center"
         }
       }>
         
         <label for="name">Name:</label>
-        <input type="text" placeholder="name" /><br />
-        <label for="college">College:</label>
-        <input type="text" placeholder="college" /><br />
-        <label for="year">Year:</label>
-        <input type="password" placeholder="year" /><br />
-        <input type="submit" />
+        <input type="text" placeholder="name" /><br /><br/>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="email" /><br /><br />
+        <label for="year">password:</label>
+        <input type="password" placeholder="password" /><br /><br />
+        <input type="submit" /><br/><br></br>
       </form>
     </div>
   );

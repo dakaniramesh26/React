@@ -1,21 +1,22 @@
 import "./App.css";
-import Parent from "./components/counter/parent";
-import UnControlled from "./components/forms/uncontrolled/uncontrolled";
-import UseStateExample1 from "./components/hooks/usestate/usestateex1";
-import UseStateExample2 from "./components/hooks/usestate/usestateex2";
-import UseStateExample3 from "./components/hooks/usestate/usestateex3";
-import Mounting from "./components/lifecyclemethods/mounting/mounting";
-import UpdatePhase from "./components/lifecyclemethods/updating/update";
-function hello() {
-  // const greenColor = "green";
-  return (
-    <div>
-    {/* <UnControlled/> */}
-    <UseStateExample1/>
-    <UseStateExample2/>
-    <UseStateExample3/>
+import FirstComponent from "./components/bootstrap/firstcomponent";
+import ProfileComponent from "./components/bootstrap/profilecomponent";
+import Buttoncomponent from "./components/button/buttoncomponent";
+import Controlled from "./components/forms/uncontrolled/controlled/controlled";
+import ControlledTask from "./components/forms/uncontrolled/controlled/task1";
+import NavigationStack from "./navigationStack/navigation";
 
-    </div>
-  );
+function hello() {
+
+  return (
+ <>
+ <NavigationStack/>
+ {/* <FirstComponent/> */}
+ {/* <ControlledTask/> */}
+
+ </>
+
+ 
+  )
 }
 export default hello;

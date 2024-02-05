@@ -1,10 +1,13 @@
 import userEvent from "@testing-library/user-event";
-import { useRef } from "react"
+import { useContext, useRef, useState } from "react"
+import { DataShare } from "../../../navigationStack/navigation";
 
 const UnControlled =()=>{
 
 const emailRef=useRef()
 const passwordRef=useRef() 
+const[error,setError ]=useState("")
+const {loginTrue}=useContext(DataShare)
 
 
   const handleSubmit=(event)=>{
@@ -33,8 +36,20 @@ const passwordRef=useRef()
   body: JSON.stringify(data)
 })
 .then((res) => res.json())
-.then((res) => console.log(res))
-.catch((err) => console.log(err))
+.then(res=>{
+  if(res.message){
+    alert(res.message)
+    setError(res.message)
+  }
+  else{
+    alert("succussful login")
+    loginTrue() 
+    localStorage.setItem("userLoginInfo",JSON.stringify(res))
+    
+  }
+})
+// .then((res) => console.log(res))
+// .catch((err) => console.log(err))
   }
     return(
         <>
@@ -47,7 +62,12 @@ const passwordRef=useRef()
     <label >Password:</label>
     <input type="password" className="form-control" id="pwd" ref={passwordRef}/>
   </div><br></br>
-  
+  {
+    error ?
+    <h2 style={{color:"red"}}>{error}</h2>
+    :
+    null
+  }
   <button type="submit" className="btn btn-primary" >Submit</button>
 </form>
         </>

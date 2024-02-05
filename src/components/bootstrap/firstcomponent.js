@@ -95,7 +95,7 @@ color:"orange"
 }]
     return(
         <>
-      <NavBarComponent/>
+      {/* <NavBarComponent/> */}
 
         {/* these are cards */}
         <div class="container-fluid p-5 bg-primary text-white text-center">
