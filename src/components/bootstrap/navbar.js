@@ -4,12 +4,18 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import reactImage from "./th.jpeg";
 
 function NavBarComponent() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+<Navbar expand="lg" className="bg-body-tertiary">
+ 
+
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+      <Navbar.Brand href="#">
+  <img src={reactImage} alt="Logo" style={{width:"100px" , height:"100px"}}/>
+</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -44,7 +50,7 @@ function NavBarComponent() {
           </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      </Navbar>  
   );
 }
 

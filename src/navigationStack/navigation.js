@@ -32,7 +32,7 @@ const NavigationStack =()=>{
         <BrowserRouter>
 
       {
-        login?<PostLogin/>:<PreLogin/>
+        true?<PostLogin/>:<PreLogin/>
 
       }
            

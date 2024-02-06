@@ -2,6 +2,8 @@
 import { useContext } from "react"
 import NavBar from "../../components/navbar/navbar"
 import { DataShare } from "../../navigationStack/navigation"
+import UseReducerEx from "../../components/hooks/usereducer/usereducer"
+import Parent from "../../components/reactMemo/parent"
 
 const AboutScreen =()=>{
   const data=useContext(DataShare)
@@ -10,7 +12,9 @@ const AboutScreen =()=>{
     return(
         <>
         <NavBar/>
-        <div style={{width:100, height:100,backgroundColor:darkTheme?"black":"red"}}></div>
+        <Parent/>
+        <UseReducerEx/>
+        {/* <div style={{width:100, height:100,backgroundColor:darkTheme?"black":"red"}}></div> */}
       
       {/* <FormComponent/>
         <FooterComponent/> */}

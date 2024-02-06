@@ -7,7 +7,7 @@ const PreLogin=()=>{
         <>
         <Routes>
         <Route path="/" Component={LoginScreen}/>
-        <Route path="*" Component={InvalidScreen}/>
+        {/* <Route path="*" Component={InvalidScreen}/> */}
         </Routes>
         </>
     )

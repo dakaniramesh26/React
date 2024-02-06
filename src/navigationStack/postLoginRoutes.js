@@ -15,7 +15,7 @@ function PostLogin() {
 
 
 <Route path="/" Component={HomeScreen}    />
-    <Route path="/settings" Component={SettingScreen}    />
+    <Route path="/setting" Component={SettingScreen}    />
     <Route path="/about" Component={AboutScreen}    />
     <Route path="/investor-relations" Component={ProductScreen}    />
 
