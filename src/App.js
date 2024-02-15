@@ -1,36 +1,22 @@
-import "./App.css";
-// import FirstComponent from "./components/bootstrap/firstcomponent";
-import CardCompo from "./components/bootstrap/card";
-import CardCompo1 from "./components/bootstrap/card1";
-import CardCompo2 from "./components/bootstrap/card2";
-import FooterComponent from "./components/bootstrap/footer";
-import NavBarComponent from "./components/bootstrap/navbar";
-import NavigationStack from "./navigationStack/navigation";
-// import ProfileComponent from "./components/bootstrap/profilecomponent";
-// import Buttoncomponent from "./components/button/buttoncomponent";
-// import Controlled from "./components/forms/uncontrolled/controlled/controlled";
-// import ControlledTask from "./components/forms/uncontrolled/controlled/task1";
-// import NavigationStack from "./navigationStack/navigation";
+import React from 'react'
+import './App.css'
+import myvideo from './assets/vedio-1/myvideo.mp4'
+import VideoThumb from './assets/vedio-1/image.webp'
+import VideoPlayer1 from './video-player-app/videoplayer1'
+import NavBarComponent from './video-player-app/navbar'
 
-function Hello() {
-
+const App = () => {
   return (
- <>
-<NavigationStack/>
- {/* <FirstComponent/> */}
- {/* <ControlledTask/> */}
- {/* <NavBarComponent/>
-
-<CardCompo/>
-<CardCompo1/>
-<CardCompo2/>
-
-<FooterComponent/> */}
-
-
- </>
-
- 
+   <>
+<NavBarComponent/>
+ <div className='video-wrapper' >
+<VideoPlayer1 src={myvideo} thumbnail={VideoThumb}/> <br/><br/>
+{/* <Videoplayer2 src={myvideo} thumbnail={VideoThumb} /> */}
+ </div>
+   
+  
+   </>
   )
 }
-export default Hello;
+
+export default App

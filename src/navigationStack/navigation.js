@@ -3,15 +3,8 @@ import { createContext, useState } from "react"
 import PostLogin from "./postLoginRoutes"
 import PreLogin from "./preLoginRoutes"
 
-
-
-
- 
 export const DataShare = createContext()
-
 const NavigationStack =()=>{
-
-
     const[name,setName]=useState("10kCoders")
     const [darkTheme,setDarkTheme]=useState(false)
     const [login,setLogin]=useState(false)
@@ -20,35 +13,20 @@ const NavigationStack =()=>{
         // debugger
         setDarkTheme(!darkTheme)
      }
-
      const loginTrue=()=>{
         setLogin(true)
      }
-
-
     return(
         <DataShare.Provider value={{name,darkTheme,changeTheme,loginTrue}}  >
-
         <BrowserRouter>
-
       {
-        true?<PostLogin/>:<PreLogin/>
-
+        login?<PostLogin/>:<PreLogin/>
       }
-           
-
-
-
         </BrowserRouter>
 
         </DataShare.Provider>
-
-
-
-
     )
 }
-
 export default NavigationStack
 
 
